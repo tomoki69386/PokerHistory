@@ -14,10 +14,10 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      url: "https://github.com/pointfreeco/swift-composable-architecture.git", .branch("iso")),
+      url: "https://github.com/pointfreeco/swift-composable-architecture.git", .branch("iso"))
   ],
   targets: [
     .target(name: "Entity"),
-    .testTarget(name: "EntityTests", dependencies: ["Entity"])
+    .testTarget(name: "EntityTests", dependencies: ["Entity"]),
   ]
 )

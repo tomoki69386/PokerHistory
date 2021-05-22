@@ -14,7 +14,7 @@ public enum Number {
   case twelve
   case thirteen
   case one
-  
+
   public var mark: String {
     switch self {
     case .two: return "2"
@@ -34,10 +34,10 @@ public enum Number {
   }
 }
 
-extension Number: Comparable { }
+extension Number: Comparable {}
 
-extension Number: CaseIterable { }
+extension Number: CaseIterable {}
 
-extension Number: Equatable { }
+extension Number: Equatable {}
 
-extension Number: Hashable { }
+extension Number: Hashable {}

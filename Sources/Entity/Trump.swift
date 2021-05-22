@@ -3,7 +3,7 @@ import Foundation
 public struct Trump {
   public let suit: Suit
   public let number: Number
-  
+
   public init(suit: Suit, number: Number) {
     self.suit = suit
     self.number = number
@@ -18,7 +18,7 @@ extension Trump: Comparable {
 }
 
 extension Trump: CustomDebugStringConvertible {
-  
+
   public var debugDescription: String {
     return "\(suit.mark): \(number.mark)"
   }
@@ -26,7 +26,7 @@ extension Trump: CustomDebugStringConvertible {
 
 extension Trump: CaseIterable {
   public typealias AllCases = [Trump]
-  
+
   public static var allCases: [Trump] {
     let numbers = Number.allCases
     let suits = Suit.allCases
@@ -40,6 +40,6 @@ extension Trump: CaseIterable {
   }
 }
 
-extension Trump: Equatable { }
+extension Trump: Equatable {}
 
-extension Trump: Hashable { }
+extension Trump: Hashable {}

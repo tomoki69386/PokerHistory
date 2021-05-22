@@ -5,7 +5,7 @@ public enum Suit {
   case heart
   case diamond
   case club
-  
+
   public var mark: String {
     switch self {
     case .spade:
@@ -20,10 +20,10 @@ public enum Suit {
   }
 }
 
-extension Suit: Comparable { }
+extension Suit: Comparable {}
 
-extension Suit: CaseIterable { }
+extension Suit: CaseIterable {}
 
-extension Suit: Equatable { }
+extension Suit: Equatable {}
 
-extension Suit: Hashable { }
+extension Suit: Hashable {}
