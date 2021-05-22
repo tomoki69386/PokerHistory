@@ -11,6 +11,8 @@ jobs:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Tap
+        run: brew tap pointfreeco/formulae
       - name: Install
         run: brew install Formulae/swift-format@5.3
       - name: Format
