@@ -18,3 +18,6 @@ format:
 		--recursive \
 		./Package.swift \
 		./Sources/
+
+open:
+	open PokerHistory.xcworkspace/
